@@ -1,6 +1,5 @@
 //require the parent file
 const Potion = require('../lib/Potion');
-jest.mock('../lib/Potion');
 
 test('creates a health potion option', () =>
 {
@@ -16,5 +15,3 @@ test('creates a random potion object', () =>
     expect(potion.name.length).toBeGreaterThan(0);
     expect(potion.value).toEqual(expect.any(Number));
 });
-
-console.log(new Potion());
